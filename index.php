@@ -35,10 +35,10 @@
                     <input type="number" name="autonomia" class="campo-texto" required/>
                     </br>
                     <label for="precoGasolina">Preço da Gasolina:</label>
-                    <input type="number" name="precoGasolina" class="campo-texto" required/>
+                    <input type="number" step="0.01" name="precoGasolina" class="campo-texto" required/>
                     </br>
                     <label for="precoAlcool">Preço do Alcool</label>
-                    <input type="number"  name="precoAlcool" class="campo-texto" required/>
+                    <input type="number" step="0.01" name="precoAlcool" class="campo-texto" required/>
                     </br>
                     <button class="botao" type="submit">Calcular</button> 
                 </form>
@@ -47,3 +47,5 @@
     </main>
 </body>
 </html>
+
+
