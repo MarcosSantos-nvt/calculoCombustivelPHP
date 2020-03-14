@@ -15,15 +15,25 @@
                 $calculoAcool = ($distancia / $autonomia) * $precoAlcool;
                 $calculoAcool= number_format($calculoAcool, 2, ',', '.');
 
-                $mensagemResultado.= "<p>OS GASTOS COM GASOLINA SERÃO: R$" .$calculoGasolina."</p>";
+                $mensagemResultado.= "<div class='sucesso'>";
+                $mensagemResultado.= "O resultado dos calculos são:";
+                $mensagemResultado.= "<ul>";
+                $mensagemResultado.= "<li><b>Consumo Gasolina: </b>".$calculoGasolina."</li>";
+                $mensagemResultado.= "<li><b>Consumo Alcool: </b>" .$calculoAcool."</li>";
+                $mensagemResultado.= "</ul>";
+                $mensagemResultado.= "</div>";
                 echo "</br>";
-                $mensagemResultado.= "<p>OS GASTOS COM ALCOOL SERÃO: R$" .$calculoAcool."</p>";
+                
         } else{
-            echo "OS FORMULARIOS ANTERIORES POSSUEM VALORES ZERADOS OU NEGATIVOS O QUE IMPEDE O CALCULO!";
+            $mensagemResultado.= "<div class 'erro'>";
+            $mensagemResultado.= "<b>Os valores setados devem ser diferentes de zero!</b>";
+            $mensagemResultado.= "</div>";
         }
 
     } else{
-        echo "OS FORMULARIOS ANTERIORES DEVEM SER PREENCHIDOS COM VALORES VALIDOS PARA O CALCULO!";
+        $mensagemResultado.= "<div class 'erro'>";
+            $mensagemResultado.= "<b>Os valores setados incorretos para calculo!</b>";
+            $mensagemResultado.= "</div>";
     }
 
     ?>
@@ -34,17 +44,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculadora de Combustível</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <main>
             <div class="painel">
-                <h1>Resultado dos calculos:</h1>
-            </div>
-            <div class="conteudo-painel">
-                <?php
-                    echo $mensagemResultado;
-                ?>
-                <a class="botao" href="index.php">Voltar</a>
+                <h2>Resultado dos calculos:</h2>
+            
+                <div class="conteudo-painel">
+                    <?php
+                        echo $mensagemResultado;
+                    ?>
+                    <a class="botao" href="index.php">Voltar</a>
+                </div>
             </div>
         </main>
         
