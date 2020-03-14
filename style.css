@@ -82,7 +82,7 @@ p {
 .sucesso {
     padding: 10px;
     border-collapse: collapse;
-    border-style: ;
+    
     border-color: #DFF0D8;
     background-color: #DFF0D8;
     color: #3C763D;
@@ -92,7 +92,7 @@ p {
 .erro {
     padding: 10px;
     flex-grow: 1;
-    border-style: ;
+   
     border-color: #F2DEDE;
     background-color: #F2DEDE;
     color: #A94442;
