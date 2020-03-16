@@ -25,13 +25,13 @@
                 echo "</br>";
                 
         } else{
-            $mensagemResultado.= "<div class 'erro'>";
-            $mensagemResultado.= "<b>Os valores setados devem ser diferentes de zero!</b>";
+            $mensagemResultado.= "<div class = 'erro'>";
+            $mensagemResultado.= "<b>Os valores setados devem ser maior do que zero!</b>";
             $mensagemResultado.= "</div>";
         }
 
     } else{
-        $mensagemResultado.= "<div class 'erro'>";
+        $mensagemResultado.= "<div class = 'erro'>";
             $mensagemResultado.= "<b>Os valores setados incorretos para calculo!</b>";
             $mensagemResultado.= "</div>";
     }
