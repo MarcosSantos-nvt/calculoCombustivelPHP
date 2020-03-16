@@ -28,17 +28,17 @@
             <h2>Calculo do valor (R$) do combustível:</h2>
             <div class="conteudo-painel">
                 <form action="calculo.php" method="POST">
-                    <label for="distancia">Distância em Km:</label>
-                    <input type="number" name="distancia" class="campo-texto" required/>
+                    <label for="distancia"> Distância   em  Km  :</label>
+                    <input class="input" type="number" name="distancia" class="campo-texto" required/>
                     </br>
-                    <label for="autonomia">Autonomia(Km/lts):</label>
-                    <input type="number" name="autonomia" class="campo-texto" required/>
+                    <label for="autonomia">Autonomia ( Km/lts ) :</label>
+                    <input class="input" type="number" name="autonomia" class="campo-texto" required/>
                     </br>
                     <label for="precoGasolina">Preço da Gasolina:</label>
-                    <input type="number" step="0.01" name="precoGasolina" class="campo-texto" required/>
+                    <input class="input" type="number" step="0.01" name="precoGasolina" class="campo-texto" required/>
                     </br>
-                    <label for="precoAlcool">Preço do Alcool</label>
-                    <input type="number" step="0.01" name="precoAlcool" class="campo-texto" required/>
+                    <label for="precoAlcool">Preço do Alcool:</label>
+                    <input class="input" type="number" step="0.01" name="precoAlcool" class="campo-texto" required/>
                     </br>
                     <button class="botao" type="submit">Calcular</button> 
                 </form>

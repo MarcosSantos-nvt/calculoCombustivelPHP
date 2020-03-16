@@ -8,11 +8,12 @@
                 $autonomia = $_POST['autonomia'];
                 $precoGasolina = $_POST['precoGasolina'];
                 $precoAlcool = $_POST['precoAlcool'];
+                $autonomiaAlcool = $autonomia * 0.73;
                 
         
                 $calculoGasolina = ($distancia / $autonomia)*$precoGasolina;
                 $calculoGasolina = number_format($calculoGasolina, 2, ',', '.');
-                $calculoAcool = ($distancia / $autonomia) * $precoAlcool;
+                $calculoAcool = ($distancia / $autonomiaAlcool) * $precoAlcool;
                 $calculoAcool= number_format($calculoAcool, 2, ',', '.');
 
                 $mensagemResultado.= "<div class='sucesso'>";

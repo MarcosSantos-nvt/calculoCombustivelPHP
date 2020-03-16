@@ -57,22 +57,18 @@ h2 {
  
 .conteudo-painel {
     padding: 40px;
+    display:block;
+    overflow:auto;
+    float:left;
+    width:100px; 
 
 }
 
-label{
-    margin-top: 20px;
-    margin-bottom: 20px;
-   
-}
-
-input{
-    
-    
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-left: 30px;
-    
+.input {
+    display:block;
+    overflow:auto;
+    float:left;
+    width:100px; 
 }
 
 p {
